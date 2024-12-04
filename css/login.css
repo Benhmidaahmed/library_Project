@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:url('image2.jpg');
+    background-size:cover;
+    background-position: center;
+    backdrop-filter:blur(5px);
+    
+
+}
+.wrapper{
+    width:420px;
+    background:#202121;
+    border:2px solid rgba(255,255,255,.2);
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.2);
+    color:aliceblue;
+    border-radius:10px;
+    padding:30px 40px;
+    
+
+}
+.wrapper h1{
+   font-size: 36px;
+   text-align:center;
+   
+}
+.wrapper .input-box{
+    width:100%;
+    height:50px;
+    position:relative;
+    margin:30px 0;
+    transition: all 300ms;
+
+}
+.wrapper .input-box:hover{
+    width:100%;
+    height:50px;
+    position:relative;
+    margin:30px 0;
+    transform:scale(1.05);
+    
+
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius:40px;
+    font-size:16px;
+    color:white;
+    padding:20px 45px 20px 20px;
+    cursor:pointer;
+}
+.input-box input::placeholder{
+    color:white;
+}
+.input-box i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+}
+.wrapper .btn{
+    width:100%;
+    height:45px;
+    background:white;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:black;
+    font-weight:600;
+    transition: all 300ms;
+}
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center; 
+}
+
+.wrapper .btn:hover{
+    width:100%;
+    height:45px;
+    background:white;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:black;
+    font-weight:600;
+    transform:scale(1.05);
+}
+.wrapper .pwderror,.regerror,.emailexist,.wrongpass,.accinv,.chvide{
+    color:red;
+}
+.wrapper .regsucc{
+    color:green;
+}
+.wrapper .register,.accinv,.wrongpass,.regsucc,.regerror,.emailexist,.pwderror,.chvide{
+    font-size:14px;
+    text-align:center;
+    margin:20px 0 15px;
+}
+.register p a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+.register p a:hover{
+    text-decoration:underline;
+}
+
